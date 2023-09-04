@@ -7,6 +7,10 @@
   font-family: 'Tektur', cursive;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* ! NAVBAR */
 
 .navbar {
@@ -52,7 +56,7 @@
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .leftSide img {
     width: 50px;
     height: 50px;
@@ -106,20 +110,28 @@
 
 .headerContainer {
   position: relative;
-  bottom: 100px;
-  left: 50px;
+  bottom: 190px;
+  left: 30px;
   padding: 20px;
 }
 
 .headerContainer h1 {
-  font-size: 100px;
+  font-size: 90px;
+  letter-spacing: 3px;
   font-weight: 700;
-  color: #72afd3;
+  color: #f5f5f5;
+  text-shadow:
+    2px -2px 4px #fff,
+    0px -2px 10px #FF3, 
+    0px -10px 20px #F90, 
+    0px -20px 40px #C33;
 }
 
 .headerContainer p {
   font-size: 40px;
-  color: #37ecba;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px white;
+  color: #FE5000;
   margin-bottom: 40px;
 }
 
@@ -155,21 +167,17 @@
 
 @media only screen and (max-width: 650px) {
   .home {
-    justify-content: center;
-    align-items: center;
+    background-color: #72afd3;
+    background-size: contain;
+    background-position: top;
+
   }
 
   .headerContainer {
-    position: absolute;
-    top: 200px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 80%;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    background-color: #1216199f;
-    color: white;
+    text-align: center;
+    top: 250px;
   }
 
   .headerContainer h1 {
@@ -179,6 +187,7 @@
   }
 
   .headerContainer p {
+    margin-top: 40px;
     font-size: 20px;
     color: white;
   }
@@ -350,10 +359,22 @@
   font-weight: 500;
 }
 
-@media (max-width:600px) {
+@media (max-width:955px) {
+
   .aboutRight p {
+    height: 50vh;
     padding: 0 10px;
     font-size: 14px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width:660px) {
+
+  .aboutRight p {
+    height: 50vh;
+    font-size: 11px;
     text-align: center;
   }
 
@@ -440,7 +461,7 @@ form button {
   cursor: pointer;
 }
 
-@media (max-width:600px) {
+@media (max-width:900px) {
   .contact {
     width: 100%;
     height: auto;
