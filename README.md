@@ -8,7 +8,9 @@ https://github.com/ilkhukuk/react_burger
 https://reactilkburger.netlify.app/
 ## What I Practice
 
-- Html, CSS, React-router-dom, JSON# Screenshot
+- Html, CSS, React-router-dom, JSON
+
+# Screenshot
 
 ![](screen.gif)
 
